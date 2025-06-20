@@ -33,7 +33,7 @@ UNSPLASH_QUERY = 'animal baby'
 # -----------------------------------------------
 ADMIN_BOT_USERNAME = "" #without @
 
-THUMB_URL = os.environ.get("THUMB_URL", "https://www.bing.com/images/search?view=detailV2&ccid=gRqHb0E0&id=1C98E21BE585A693D78242DACF8A2DB876548423&thid=OIP.gRqHb0E0qnJNaWwjiNSgOwHaEK&mediaurl=https%3a%2f%2fimages8.alphacoders.com%2f121%2f1217457.jpg&exph=1152&expw=2048&q=iron+man+thumbnail&simid=607993303824868403&FORM=IRPRST&ck=0A6B042EF8C7C47ECDCD06D5FDE58938&selectedIndex=0&itb=0")
+THUMB_URL = os.environ.get("THUMB_URL", "https://graph.org/file/69356215e2506436f381b.jpg")
 
 
 
