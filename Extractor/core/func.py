@@ -32,13 +32,13 @@ async def subscribe(app, message):
         try:
             user = await app.get_chat_member(update_channel, message.from_user.id)
             if user.status == "kicked":
-                await message.reply_text("Sorry Sir, You are Banned. Contact My Support Group @Xyzaxv")
+                await message.reply_text("Sorry Sir, You are Banned. Contact My Support Group ")
                 return 1
         except UserNotParticipant:
             try:
                 url = await gen_link(app, update_channel)
                 await message.reply_photo(
-                    photo="https://envs.sh/sPH.jpg",
+                    photo="https://graph.org/file/dbd48ba7093582ab20063.jpg",
                     caption=script.FORCE_MSG.format(message.from_user.mention), 
                     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🤖", url=f"{url}")]])
                 )
@@ -46,7 +46,7 @@ async def subscribe(app, message):
                 # If we can't get invite link, just show a simple message
                 await message.reply_text(
                     "Please join our updates channel to use the bot.",
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🤖", url="https://t.me/sujaloop")]])
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🤖", url="https://t.me/+cbiTFdIt__o2NDNl")]])
                 )
             return 1
         except Exception as e:
