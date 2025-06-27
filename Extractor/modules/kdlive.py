@@ -301,7 +301,7 @@ async def extract(app, m, appname):
                                 m.chat.id,
                                 document=txt_filename,
                                 caption=f"{caption}\n\n💡 This file contains simple URL list",
-                                parse_mode="HTML"
+                                parse_mode="html"
                             )
                             await app.send_document(PREMIUM_LOGS, document=txt_filename, caption=caption)
                             
