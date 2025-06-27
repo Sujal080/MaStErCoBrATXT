@@ -280,19 +280,19 @@ async def extract(app, m, appname):
                         minutes, seconds = divmod(duration, 60)
                         
                         caption = (
-                                f"🎓 <b>COURSE EXTRACTED</b> 🎓\n\n"
-                                f"📱 <b>APP:</b> <code>{appname}</code>\n"
-                                f"📚 <b>BATCH:</b> <code>{batch_name}</code> (ID: <code>{batch_id}</code>)\n"
-                                f"⏱ <b>EXTRACTION TIME:</b> <code>{int(minutes):02d}:{int(seconds):02d}</code>\n"
-                                f"📅 <b>DATE:</b> <code>{datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%d-%m-%Y %H:%M:%S')} IST</code>\n\n"
-                                f"📊 <b>CONTENT STATS</b><pre>\n"
-                                f"├─ 📁 Total Links: {len(all_urls)}\n"
-                                f"├─ 🎬 Videos: {video_count}\n"
-                                f"├─ 📄 PDFs: {pdf_count}\n"
-                                f"├─ 📦 Others: {other_count}\n"
-                                f"└─ 📚 Topics: {len(topic_wise_content)}\n</pre>\n\n"
-                                f"🚀 <b>Extracted by:</b> @{(await app.get_me()).username}\n\n"
-                                f"<code>╾───• {BOT_TEXT.replace('<','&lt;').replace('>','&gt;').replace('&','&amp;')} •───╼</code>"
+                            f"🎓 <b>COURSE EXTRACTED</b> 🎓\n\n"
+                            f"📱 <b>APP:</b> {appname}\n"
+                            f"📚 <b>BATCH:</b> {batch_name} (ID: {batch_id})\n"
+                            f"⏱ <b>EXTRACTION TIME:</b> {int(minutes):02d}:{int(seconds):02d}\n"
+                            f"📅 <b>DATE:</b> {datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%d-%m-%Y %H:%M:%S')} IST\n\n"
+                            f"📊 <b>CONTENT STATS</b>\n"
+                            f"├─ 📁 Total Links: {len(all_urls)}\n"
+                            f"├─ 🎬 Videos: {video_count}\n"
+                            f"├─ 📄 PDFs: {pdf_count}\n"
+                            f"├─ 📦 Others: {other_count}\n"
+                            f"└─ 📚 Topics: {len(topic_wise_content)}\n\n"
+                            f"🚀 <b>Extracted by:</b> @{(await app.get_me()).username}\n\n"
+                            f"<code>╾───• {BOT_TEXT} •───╼</code>"
                         )
                         
                         try:
