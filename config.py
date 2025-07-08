@@ -4,34 +4,34 @@ from os import getenv
 
 
 # ------------------------------------------------
-API_ID = int(os.environ.get("API_ID", ""))
+API_ID = int(os.environ.get("API_ID", "25933223"))
 # ------------------------------------------------
-API_HASH = os.environ.get("API_HASH","")
+API_HASH = os.environ.get("API_HASH","6ef5a426d85b7f01562a41e6416791d3")
 # ------------------------------------------------
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7464128864:AAE1PIFzPw_lQ72ahXrVuFoNGtUCiSyaA_w")
 # ------------------------------------------------
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-BOT_TEXT = "RAO 𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐎𝐑"
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Svnexbot")
+BOT_TEXT = "MY 𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐎𝐑"
 # ------------------------------------------------
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 # ------------------------------------------------
 # //LOG CHANNEL ID 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002799217873"))
 
 # //FORCE_CHANNEL_ID
-CHANNEL_ID2 = int(os.environ.get("CHANNEL_ID2", "")) 
+CHANNEL_ID2 = int(os.environ.get("CHANNEL_ID2", "-1002717202608")) 
 # -----------------------------------------------
 MONGO_URL = os.environ.get("")
 # -----------------------------------------------
-PREMIUM_LOGS = int(os.environ.get("PREMIUM_LOGS", " "))
+PREMIUM_LOGS = int(os.environ.get("PREMIUM_LOGS", "-1002799217873"))
 # -----------------------------------------------
-join = '<a href="https://t.me/+uUWWSZu6389hZGY9 ">✳️ Bᴀᴄᴋᴜᴘ</a>'
+join = '<a href="https://t.me/studywithsv ">✳️ Bᴀᴄᴋᴜᴘ</a>'
 # -----------------------------------------------
 UNSPLASH_ACCESS_KEY = 'RabDRmuXXBobanmwwbvpP5LwoG4J8ox34y5Sstz-9jk'
 # -----------------------------------------------
 UNSPLASH_QUERY = 'animal baby'
 # -----------------------------------------------
-ADMIN_BOT_USERNAME = "" #without @
+ADMIN_BOT_USERNAME = "Lallantoop" #without @
 
 THUMB_URL = os.environ.get("THUMB_URL", "https://graph.org/file/69356215e2506436f381b.jpg")
 
